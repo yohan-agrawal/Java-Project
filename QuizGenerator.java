@@ -39,7 +39,7 @@ public class QuizGenerator {
             System.out.println("3. Exit");
             System.out.print("Choose an option: ");
             int option = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (option) {
                 case 1 -> createQuiz();
@@ -75,7 +75,7 @@ public class QuizGenerator {
             while (true) {
                 System.out.print("Enter the number of the correct option (1-4): ");
                 correctOptionIndex = scanner.nextInt() - 1;
-                scanner.nextLine();  // Consume newline
+                scanner.nextLine();
                 if (correctOptionIndex >= 0 && correctOptionIndex < 4) {
                     break;
                 }
@@ -103,7 +103,7 @@ public class QuizGenerator {
 
         System.out.print("Choose a quiz to take (1-" + (index - 1) + "): ");
         int quizChoice = scanner.nextInt() - 1;
-        scanner.nextLine();  // Consume newline
+        scanner.nextLine();
 
         if (quizChoice < 0 || quizChoice >= quizzes.size()) {
             System.out.println("Invalid choice. Returning to main menu.");
@@ -120,7 +120,7 @@ public class QuizGenerator {
             while (true) {
                 System.out.print("Your answer (1-4): ");
                 userAnswer = scanner.nextInt() - 1;
-                scanner.nextLine();  // Consume newline
+                scanner.nextLine();
                 if (userAnswer >= 0 && userAnswer < 4) {
                     break;
                 }
